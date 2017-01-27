@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+	<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+		<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+			<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+				<head>
+					<meta charset="utf-8">
+					<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+					<title>Rescue 1 Incident</title>
+					<meta name="description" content="">
+					<meta name="viewport" content="width=device-width">
+					
+					<link rel="stylesheet" href="css/main.css">
+					<link rel="stylesheet" href="css/webclient.css">
+		
+					<script src="js/modernizr-2.6.2.min.js"></script>
+					<script src="js/jquery-1.8.3.min.js"></script>
+					<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+					<script src="js/plugins.js"></script>
+					<script src="js/strophe.js"></script>
+					<script src="js/A91MapRect.js"></script>
+					<script src="js/A91DataObject.js"></script>
+					<script src="js/A91MappedDataObject.js"></script>
+					<script src="js/A91Agency.js"></script>
+					<script src="js/A91Assignment.js"></script>
+					<script src="js/Active911.js"></script>
+					<script src="js/A91Device.js"></script>
+					<script src="js/A91Location.js"></script>
+					<script src="js/A91Alert.js"></script>
+					<script src="js/Active911Xmpp.js"></script>
+					<script src="js/Active911XmppPing.js"></script>
+					<script src="js/Active911Map.js"></script>
+					<script src="js/Active911NokiaMap.js"></script>
+					<script src="js/Active911GoogleMap.js"></script>
+					<script src="js/Active911GPS.js"></script>
+					<script src="js/TimerController.js"></script>
+
+					<script src="js/Active911Config.js"></script>
+					<script src="js/StopWatch.js"></script>
+					<script src="js/webclient.js"></script>
+
+				</head>
+
+				<body>
+				
+				<!-- register frame -->
+					<div class="ui-corner-all" id="register_area" style="display: none;">
+						<div id="register_area-box">
+							<div class="ui-widget" style="margin:5px auto;display: none; text-align: left;" id="register_area-error-message">
+								<div style="padding: 0 .7em" class="ui-state-error ui-corner-all"> 
+									<p style="margin: 10px"><span style="float: left; margin-right: .3em;" class="ui-icon ui-icon-alert"></span> 
+									<strong>Error:</strong> <span id="register_area-error-message-text"></span></p>
+								</div>
+							</div>
+
+							<img src="images/Rescue_1.png" class="logo" />
+							<h3>Rescue 1 Incident Display</h3>
+							<input type="text" id="device_code" placeholder="12345-ABCD" />
+							<a href="#" class="ui-corner-all active911-blue-button" id="register">Go</a>
+							<span class="spinner-container">
+								<img src="images/spinner_blue_32px.gif" class="spinner" style="display: none"/>
+							</span>
+							<p>Please enter your device code to register this device</p>
+						</div>
+					</div>
+
+				
+					<div id='wrapper'>
+						<div id='statusBD'></div>
+						<div id='row'>
+							<div id='left'>
+								<div id='map'></div>
+								<div id='activeUnits'></div>
+							</div>
+							<div id='alert'>
+								<div id="call_type"></div> </br>
+								<div id="address"></div></br>
+								<div id="units"></div></br>
+								<div id="details"></div></br></br>
+								<div id='time'></div>
+							</div>
+						</div>
+					</div>
+	
+				</body>
+		</html>

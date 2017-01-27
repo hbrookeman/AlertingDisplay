@@ -1,0 +1,14 @@
+[Unit]
+Description=Startup
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/Desktop/Startup.sh
+User=pi
+WorkingDirectory=/home/pi/Desktop
+Restart=no
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
