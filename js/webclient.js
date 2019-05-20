@@ -210,9 +210,9 @@ function start_webclient(data, bypass_ratecheck) {
 	// Update the time (in case local computer is off)
 	active911.set_server_time(data.device.unix_timestamp);
 
-
+	// Uncomment to show last alert on startup
  	var a = new A91Alert(data.alerts[data.alerts.length-1])
- 	active911.add_alert(a);
+// 	active911.add_alert(a);
 
 	// Create an array of agencies
 	for (i in data.device.agencies){
