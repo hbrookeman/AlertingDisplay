@@ -37,11 +37,7 @@ Active911.prototype.draw_alert=function(alert) {
 	var reg2 = /(\d\d\:\d\d\:\d\d\s\d*\w*)/gi;
 	var reg3 = /(DT\:\d+\/\d+\/\d+\s\d+\:\d+\:\d+)/gi;
 	var reg4 = /(ESN\:\w+)/gi;
-	var details = alert.get_item_value("details");
-	
-	
-	var ESN = details.match(/(ESN\:\w+)/gi)[0];
-	
+	var details = alert.get_item_value("details");	
 	
 	// Update alert text fields
 	$('#call_type').text(alert.get_item_value("description"));
@@ -49,7 +45,7 @@ Active911.prototype.draw_alert=function(alert) {
 	//$('#details').text(alert.get_item_value("details"));
 	$('#details').text(details.replace(reg1,"").replace(reg2,"").replace(reg3,""));
 	$('#units').text(alert.get_item_value("units"));
-	
+
 	// Prevent text running off screen
 	if(alert.get_item_value("details").length > 275) {
 		document.getElementById("details").style.fontSize = "30px";
