@@ -59,7 +59,7 @@ Active911.prototype.draw_alert=function(alert) {
 	
 	active_timer = setTimeout(function(){
 		active911.undraw_alert();
-		$('#statusBD').append("<iframe width=\"1920\" height=\"1080\" frameBorder=\"0\" src=\"http://warhammer.mcc.virginia.edu/statusbd/statusbd.php\"> </iframe>");
+		$('#statusBD').append("<iframe width=\"1920\" height=\"1080\" frameBorder=\"0\" src=\"http://warhammer.mcc.virginia.edu/statusbd/statusbdd.php\"> </iframe>");
 	}, 300000);
 };
 
