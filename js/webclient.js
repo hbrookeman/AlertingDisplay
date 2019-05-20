@@ -201,7 +201,7 @@ function start_webclient(data, bypass_ratecheck) {
 	$("#register_area").hide();
 	console.log("Starting webclient");
 
-	$('#statusBD').append("<iframe width=\"1920\" height=\"1080\" frameBorder=\"0\" src=\"http://warhammer.mcc.virginia.edu/statusbd/statusbd.php\"> </iframe>");
+	$('#statusBD').append("<iframe width=\"1920\" height=\"1080\" frameBorder=\"0\" src=\"http://warhammer.mcc.virginia.edu/statusbd/statusbdd.php\"> </iframe>");
 	console.log("Loading Status Board");
 	
 	// Save our device data
